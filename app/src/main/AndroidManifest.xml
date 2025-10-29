@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- ✅ Add this line here (before <application>) -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -15,7 +14,7 @@
         android:supportsRtl="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/Theme.Restclient"
-        android:usesCleartextTraffic="true"> <!-- 👈 Optional for HTTP (non-HTTPS) -->
+        android:usesCleartextTraffic="true"> 
 
         <activity
             android:name=".MainActivity"
